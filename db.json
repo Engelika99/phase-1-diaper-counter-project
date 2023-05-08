@@ -1,0 +1,33 @@
+{
+  "diapers": [
+    {
+      "id": 1,
+      "wetCount": 1,
+      "poopCount": 0
+      
+    },
+    {
+      "id": 2,
+      "wetCount": 0,
+      "poopCount": 1
+    },
+    {
+      "id": 3,
+      "wetCount": 2,
+      "poopCount": 0
+    },
+    {
+      "id": 4,
+      "wetCount": 1,
+      "poopCount": 1
+    },
+    {
+      "id": 5,
+      "wetCount": 0,
+      "poopCount": 2,
+      "information": "Stinky poop"
+    }
+    
+    
+  ]
+}
