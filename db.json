@@ -4,40 +4,34 @@
       "id": 1,
       "wetCount": 1,
       "poopCount": 0,
-      "mixedCount": 2,
-      "dryCount": 0
+      "information": "description"
       
     },
     {
       "id": 2,
       "wetCount": 0,
       "poopCount": 1,
-      "mixedCount": 1,
-      "dryCount": 0
+      "information": "description"
     },
     {
       "id": 3,
       "wetCount": 2,
       "poopCount": 0,
-      "mixedCount": 0,
-      "dryCount": 1
+      "information": "description"
       
     },
     {
       "id": 4,
       "wetCount": 1,
       "poopCount": 1,
-      "mixedCount": 2,
-      "dryCount": 0
+      "information": "description"
       
     },
     {
       "id": 5,
       "wetCount": 2,
       "poopCount": 2,
-      "mixedCount": 2,
-      "dryCount": 0
-      
+      "information": "description"
     }
     
     
