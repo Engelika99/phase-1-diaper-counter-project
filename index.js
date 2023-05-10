@@ -9,3 +9,8 @@ const poopCounts = document.getElementById('poop-count');
 //Initialize counts
 let wetCount = 0;
 let poopCount = 0;
+
+function updateCounts() {
+    wetCounts.textContent = wetCount;
+    poopCounts.textContent = poopCount;
+}
