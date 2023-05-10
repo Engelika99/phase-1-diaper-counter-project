@@ -1,3 +1,5 @@
+//Create variable for URL
+const dbFile = 'http://localhost:3000/diapers';
 //DOM elements
 document.addEventListener("DOMContentLoaded", function() {
 const addWetBtn = document.getElementById('add-wet');
