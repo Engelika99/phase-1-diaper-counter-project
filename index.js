@@ -6,3 +6,6 @@ const resetBtn = document.getElementById('reset');
 const wetCounts = document.getElementById('wet-count');
 const poopCounts = document.getElementById('poop-count'); 
 });
+//Initialize counts
+let wetCount = 0;
+let poopCount = 0;
