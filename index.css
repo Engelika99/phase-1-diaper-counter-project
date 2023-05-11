@@ -37,3 +37,15 @@ button.yellow:hover {
     background-color: gold;
     color: #000;
 }
+button.brown {
+    background-color: rgb(119, 78, 78);
+    color: goldenrod;
+}
+button.brown:hover {
+    background-color: rgb(110, 40, 40);
+    color: goldenrod;
+}
+button.red {
+    background-color: rgb(247, 69, 69);
+    color: rgb(241, 198, 132);
+}
