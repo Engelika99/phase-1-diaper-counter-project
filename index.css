@@ -49,3 +49,7 @@ button.red {
     background-color: rgb(247, 69, 69);
     color: rgb(241, 198, 132);
 }
+button.red:hover {
+    background-color: rgb(180, 6, 6);
+    color: antiquewhite;
+}
