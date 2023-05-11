@@ -4,31 +4,31 @@
       "id": 1,
       "wetCount": 0,
       "poopCount": 0,
-      "information": "description"
+      "information": ""
     },
     {
       "id": 2,
       "wetCount": 0,
       "poopCount": 0,
-      "information": "description"
+      "information": ""
     },
     {
       "id": 3,
       "wetCount": 0,
       "poopCount": 0,
-      "information": "description"
+      "information": ""
     },
     {
       "id": 4,
       "wetCount": 0,
       "poopCount": 0,
-      "information": "description"
+      "information": ""
     },
     {
       "id": 5,
       "wetCount": 0,
       "poopCount": 0,
-      "information": "description"
+      "information": ""
     },
     {
       "id": 1683775166222,
@@ -65,6 +65,12 @@
       "wetCount": 6,
       "poopCount": 5,
       "information": "stank poopy"
+    },
+    {
+      "id": 1683781098616,
+      "wetCount": 4,
+      "poopCount": 3,
+      "information": "green poo"
     }
   ]
 }
