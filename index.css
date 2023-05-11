@@ -26,3 +26,6 @@ button {
     color: rgb(204, 177, 230);
     cursor:pointer;
 }
+button:hover {
+    background-color: aqua;
+}
