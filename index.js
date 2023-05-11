@@ -102,4 +102,18 @@ if (!response.ok) {
     throw new Error(`HTTp error! status ${response.status}`);
 }
 });
+//Initialize the diaper descriptions on the page from the database
+async function userInput() {
+    const response = await fetch(dbFile);
+    if (!response.ok) {
+        throw new Error(`HTTp error! status: ${response.status}`);
+    }
+    const data = await response.json();
+    data.forEach((diaper) => {
+        const newDescription = document.createElement('div');
+        newDescription.textContent = diaper.information;
+        container.appendChild(newDescription);
+    });
+}
+userInput();
 });
