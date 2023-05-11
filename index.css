@@ -33,3 +33,7 @@ button.yellow {
     background-color: rgb(241, 241, 125);
     color: #000;
 }
+button.yellow:hover {
+    background-color: gold;
+    color: #000;
+}
