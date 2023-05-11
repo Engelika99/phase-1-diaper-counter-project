@@ -81,3 +81,10 @@ form.addEventListener('submit', async(event) => {
     userDescription.value = '';
 })
 });
+//Add new diaper to database
+const newDiaper = {
+    id: Date.now(),
+    wetCount: 0,
+    poopCount: 0,
+    information: description,
+};
