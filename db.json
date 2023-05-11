@@ -2,8 +2,8 @@
   "diapers": [
     {
       "id": 1,
-      "wetCount": 3,
-      "poopCount": 3,
+      "wetCount": 0,
+      "poopCount": 0,
       "information": "description"
     },
     {
@@ -29,6 +29,42 @@
       "wetCount": 0,
       "poopCount": 0,
       "information": "description"
+    },
+    {
+      "id": 1683775166222,
+      "wetCount": 0,
+      "poopCount": 0,
+      "information": "stinky poop"
+    },
+    {
+      "id": 1683778354417,
+      "wetCount": 0,
+      "poopCount": 0,
+      "information": "poop"
+    },
+    {
+      "id": 1683778540994,
+      "wetCount": 0,
+      "poopCount": 0,
+      "information": "normal poop"
+    },
+    {
+      "id": 1683779491784,
+      "wetCount": 0,
+      "poopCount": 0,
+      "information": "stink poop"
+    },
+    {
+      "id": 1683779493965,
+      "wetCount": 3,
+      "poopCount": 4,
+      "information": "stank poo"
+    },
+    {
+      "id": 1683779549324,
+      "wetCount": 6,
+      "poopCount": 5,
+      "information": "stank poopy"
     }
   ]
 }

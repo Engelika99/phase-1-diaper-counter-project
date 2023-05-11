@@ -14,6 +14,12 @@ const container = document.querySelector('.container');
 //Initialize counts
 let wetCount = 0;
 let poopCount = 0;
+const newDiaper = {
+    id: Date.now(),
+    wetCount: 0,
+    poopCount: 0,
+    information: "",
+}
 updateCounts();
 
 function updateCounts() {
@@ -24,13 +30,14 @@ function updateCounts() {
 addWetBtn.addEventListener('click', async () => {
 wetCount++;
 updateCounts();
+newDiaper.wetCount++;//increment wetCount in newDiaper object
 //Update wet diaper count 
-const response = await fetch(`${dbFile}/1`, {
+const response = await fetch(`${dbFile}/${newDiaper.id}`, {
     method: 'PATCH',
     headers: {
         'Content-Type': 'application/json',
     },
-    body: JSON.stringify({ wetCount }),
+    body: JSON.stringify({ wetCount: newDiaper.wetCount }),
 });
 if (!response.ok) {
     throw new Error(`HTTP error! status: ${response.status}`)
@@ -41,13 +48,14 @@ if (!response.ok) {
 addPoopBtn.addEventListener('click', async () => {
     poopCount++;
     updateCounts();
+    newDiaper.poopCount++;
 //Update the poop diaper count 
-const response = await fetch(`${dbFile}/1`, {
+const response = await fetch(`${dbFile}${newDiaper.id}`, {
     method: 'PATCH', 
     headers: {
         'Content-Type': 'application/json',
     },
-    body: JSON.stringify({poopCount}),
+    body: JSON.stringify({poopCount: newDiaper.poopCount}),
 });
 if (!response.ok) {
     throw new Error(`HTTP error! status: ${response.status}`);
@@ -59,7 +67,7 @@ resetBtn.addEventListener('click', async () => {
     poopCount = 0;
     updateCounts();
     //Reset diaper counts in the database
-    const response = await fetch(`${dbFile}/1`, {
+    const response = await fetch(`${dbFile}/${newDiaper.id}`, {
         method: 'PATCH',
         headers: {
             'Content-Type': 'application/json',
@@ -79,15 +87,10 @@ form.addEventListener('submit', async(event) => {
     newDescription.textContent = description;
     container.appendChild(newDescription);
     userDescription.value = '';
+    newDiaper.information = description;
 
 
 //Add new diaper to database
-const newDiaper = {
-    id: Date.now(),
-    wetCount: 0,
-    poopCount: 0,
-    information: description,
-};
 const response = await fetch(dbFile, {
 method: 'POST', 
 headers: {
