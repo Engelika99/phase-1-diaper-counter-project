@@ -79,8 +79,8 @@ form.addEventListener('submit', async(event) => {
     newDescription.textContent = description;
     container.appendChild(newDescription);
     userDescription.value = '';
-})
-});
+
+
 //Add new diaper to database
 const newDiaper = {
     id: Date.now(),
@@ -88,3 +88,15 @@ const newDiaper = {
     poopCount: 0,
     information: description,
 };
+const response = await fetch(dbFile, {
+method: 'POST', 
+headers: {
+    'Content-Type': 'application/json',
+},
+body: JSON.stringify(newDiaper),
+});
+if (!response.ok) {
+    throw new Error(`HTTp error! status ${response.status}`);
+}
+});
+});
