@@ -29,3 +29,7 @@ button {
 button:hover {
     background-color: aqua;
 }
+button.yellow {
+    background-color: rgb(241, 241, 125);
+    color: #000;
+}
