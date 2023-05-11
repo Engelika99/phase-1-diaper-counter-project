@@ -2,38 +2,33 @@
   "diapers": [
     {
       "id": 1,
-      "wetCount": 1,
-      "poopCount": 0,
+      "wetCount": 3,
+      "poopCount": 3,
       "information": "description"
-      
     },
     {
       "id": 2,
       "wetCount": 0,
-      "poopCount": 1,
+      "poopCount": 0,
       "information": "description"
     },
     {
       "id": 3,
-      "wetCount": 2,
+      "wetCount": 0,
       "poopCount": 0,
       "information": "description"
-      
     },
     {
       "id": 4,
-      "wetCount": 1,
-      "poopCount": 1,
+      "wetCount": 0,
+      "poopCount": 0,
       "information": "description"
-      
     },
     {
       "id": 5,
-      "wetCount": 2,
-      "poopCount": 2,
+      "wetCount": 0,
+      "poopCount": 0,
       "information": "description"
     }
-    
-    
   ]
 }

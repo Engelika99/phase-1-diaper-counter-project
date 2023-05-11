@@ -14,27 +14,61 @@ const container = document.querySelector('.container');
 //Initialize counts
 let wetCount = 0;
 let poopCount = 0;
+updateCounts();
 
 function updateCounts() {
     wetCounts.textContent = wetCount;
     poopCounts.textContent = poopCount;
 }
 // Event Listener for the add wet button
-addWetBtn.addEventListener('click', () => {
+addWetBtn.addEventListener('click', async () => {
 wetCount++;
 updateCounts();
+//Update wet diaper count 
+const response = await fetch(`${dbFile}/1`, {
+    method: 'PATCH',
+    headers: {
+        'Content-Type': 'application/json',
+    },
+    body: JSON.stringify({ wetCount }),
+});
+if (!response.ok) {
+    throw new Error(`HTTP error! status: ${response.status}`)
+}
 });
 
 //Event listener for the add poop button
-addPoopBtn.addEventListener('click', () => {
+addPoopBtn.addEventListener('click', async () => {
     poopCount++;
     updateCounts();
+//Update the poop diaper count 
+const response = await fetch(`${dbFile}/1`, {
+    method: 'PATCH', 
+    headers: {
+        'Content-Type': 'application/json',
+    },
+    body: JSON.stringify({poopCount}),
+});
+if (!response.ok) {
+    throw new Error(`HTTP error! status: ${response.status}`);
+}
 });
 //Event lisinter for the reset button
-resetBtn.addEventListener('click', () => {
+resetBtn.addEventListener('click', async () => {
     wetCount = 0;
     poopCount = 0;
     updateCounts();
+    //Reset diaper counts in the database
+    const response = await fetch(`${dbFile}/1`, {
+        method: 'PATCH',
+        headers: {
+            'Content-Type': 'application/json',
+        },
+        body: JSON.stringify({wetCount: 0, poopCount: 0}),
+});
+if (!response.ok) {
+    throw new Error(`HTTP error! status: ${response.status}`);
+}
 });
 
 //Event listener for the form submission
