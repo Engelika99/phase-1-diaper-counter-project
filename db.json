@@ -71,6 +71,18 @@
       "wetCount": 0,
       "poopCount": 0,
       "information": "green poo"
+    },
+    {
+      "id": 1683786535748,
+      "wetCount": 6,
+      "poopCount": 1,
+      "information": "Small pebble stinky"
+    },
+    {
+      "id": "Thu May 11 2023 02:35:30 GMT-0400 (Eastern Daylight Time)",
+      "wetCount": 11,
+      "poopCount": 0,
+      "information": "Big pebble stinky"
     }
   ]
 }

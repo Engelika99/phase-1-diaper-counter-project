@@ -15,7 +15,7 @@ const container = document.querySelector('.container');
 let wetCount = 0;
 let poopCount = 0;
 const newDiaper = {
-    id: Date.now(),
+    id: Date(),
     wetCount: 0,
     poopCount: 0,
     information: "",
