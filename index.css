@@ -50,6 +50,6 @@ button.red {
     color: rgb(241, 198, 132);
 }
 button.red:hover {
-    background-color: rgb(180, 6, 6);
+    background-color: red;
     color: antiquewhite;
 }
