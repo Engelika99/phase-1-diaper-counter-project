@@ -17,7 +17,7 @@ The app is built using CSS, HTML, JavaScript, and fetch API. The main features a
 3. Storing diaper information in a JSON database using fetch API.
 
 ### Break Down
-The code consist of different variables, functions, and two distinct event listeners that work together to create a working app. ***The updateCounts()*** function is used to update the counts for each type of diaper. The ***async** functions for adding, submitting, and resetting diapers are used to interact with the JSON database.
+The code consist of different variables, functions, and two distinct event listeners("Submit", and "Click") that work together to create a working app. ***The updateCounts()*** function is used to update the counts ***for each*** type of diaper. The ***async** functions for adding, submitting, and resetting diapers are used to interact with the JSON database.
 
 ## Installation
 To use the app clone the repository and open index.html file in your browser.

@@ -61,6 +61,7 @@ if (!response.ok) {
     throw new Error(`HTTP error! status: ${response.status}`);
 }
 });
+  
 //Event lisinter for the reset button
 resetBtn.addEventListener('click', async () => {
     wetCount = 0;
